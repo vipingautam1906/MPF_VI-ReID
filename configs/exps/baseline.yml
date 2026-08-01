@@ -1,0 +1,49 @@
+prefix: SYSU
+
+# Setting for Data
+dataset: sysu
+image_size: (384, 192)
+sample_method: norm_triplet
+p_size: 8
+k_size: 16
+batch_size: 128
+drop_last_stride: true
+
+# Settings for Augmentation
+random_flip: true
+random_crop: true
+random_erase: true
+color_jitter: true
+padding: 10
+tms : false
+
+# PART-PMR 
+num_parts: 6
+parts: false
+PMR: false
+
+# PGFA
+alignment: false
+prototypes: false  
+
+# Loss
+loss_id: true
+MAR: false
+
+# Training Hyperparameters
+lr: 0.00035 
+wd: 0.0005 
+num_epoch: 300
+lr_step: [80,140] # best schedule
+fp16: true
+
+# Settings for Logging
+start_eval: 0
+log_period: 100
+eval_interval: 1
+
+# Evaluation Settings
+resume: 'ckptlog/sysu/SYSU_Time-2026-06-08_17-40-39/SYSU_Time-2026-06-08_17-40-39_model_best-245.pth'
+test_only: true
+rerank: false
+aqe: false

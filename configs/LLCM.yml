@@ -1,0 +1,52 @@
+prefix: LLCM
+
+# Setting for Data
+dataset: llcm
+image_size: (384, 192)
+sample_method: norm_triplet
+p_size: 8
+k_size: 16
+batch_size: 128
+drop_last_stride: true
+
+# Settings for Augmentation
+random_flip: true
+random_crop: true
+random_erase: true
+color_jitter: true
+padding: 10
+tms : true
+
+# PART-PMR 
+num_parts: 6
+parts: true
+PMR: true
+
+# Loss
+loss_id: true
+MAR: true
+
+# PGFA
+alignment: true
+prototypes: true  
+
+# Training Hyperparameters
+lr: 0.00035 
+wd: 0.0005 
+num_epoch: 300
+lr_step: [50, 60, 70, 80]  
+fp16: true
+train_p: 3.0
+test_p: 3.5
+
+# Settings for Logging
+start_eval: 0
+log_period: 50
+eval_interval: 1
+
+# Evaluation Settings
+resume : ""
+test_only: false
+rerank: false
+aqe: false
+

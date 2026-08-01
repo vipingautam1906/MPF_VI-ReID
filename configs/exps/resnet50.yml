@@ -1,0 +1,49 @@
+# Customized Strategy Config
+
+prefix: SYSU
+
+# Setting for Data
+dataset: sysu
+image_size: (384, 192)
+sample_method: norm_triplet
+p_size: 8
+k_size: 16
+batch_size: 128
+
+# Settings for Augmentation
+random_flip: true
+random_crop: true
+random_erase: true
+color_jitter: true
+padding: 10
+tms : false
+
+# Settings for Model
+num_parts: 6
+parts: false
+PMR: false
+prototypes: false 
+MAR: false 
+alignment: false
+drop_last_stride: true
+
+# Setting for Loss
+loss_id: true
+
+# Settings for Training
+lr: 0.00035 # default 0.00035
+wd: 0.0005 # 0.0005
+num_epoch: 300
+lr_step: [80, 140] 
+fp16: true
+
+# Settings for Logging
+start_eval: 0
+log_period: 100
+eval_interval: 1
+
+# Settings for Testing
+resume: '/home/vipin/PhD/models/vireid/resnet50/resnet50-0676ba61.pth' # path to resnet50 cached check points
+test_only: true
+rerank: false
+aqe: false

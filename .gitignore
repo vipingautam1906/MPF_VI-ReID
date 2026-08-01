@@ -1,0 +1,68 @@
+# =========================
+# Checkpoints / Logs
+# =========================
+ckptlog/
+logs/
+runs/
+tensorboard/
+ablation-All/
+ablation-loss_weights/
+ablation-LR/
+ablation-MAR/
+ablation-PartPMR/
+ablation-TMS/
+
+events.out.tfevents.*
+
+# =========================
+# External repositories
+# =========================
+apex/
+resnet50/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Experiment outputs
+# =========================
+ablation-*/
+visualizations/
+analysis/
+tsne/
+cams/
+
+# =========================
+# Temporary / dumps
+# =========================
+nohup.out
+*.log
+
+# =========================
+# Dataset / generated txt
+# =========================
+*.txt
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# exps and other files
+# =========================
+run.sh
+tsne.py
+activation_maps.py
+cross_modal_simularity_analysis.py

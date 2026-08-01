@@ -145,24 +145,6 @@ configs/
 
 ---
 
-
-## Citation
-
-If you find this repository useful, please cite our paper.
-
-```bibtex
-@article{MPF2026,
-  title={MPF: Multi-Scale Progressive Feature Learning for Visible-Infrared Person Re-Identification},
-  author={Vipin Gautam and Co-authors},
-  journal={IEEE},
-  year={2026}
-}
-```
-
-Please replace the citation with the final published version after acceptance.
-
----
-
 ## Acknowledgements
 
 This work builds upon several excellent open-source person re-identification frameworks. We thank the authors for making their implementations publicly available.

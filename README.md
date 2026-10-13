@@ -1,6 +1,6 @@
 # MPF_VI-ReID
 
-**Modality Purification Framework for Visible-Infrared Person Re-Identification**
+**Official code for Modality Purification Framework for Visible-Infrared Person Re-Identification (under review at IEEE T-BIOM)**
 
 ---
 
